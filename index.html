@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playroom — комната развлечений</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">✳ playroom</a>
+
+        <nav>
+            <a href="#games">Игры</a>
+            <a href="#daily">Задание дня</a>
+        </nav>
+
+        <button class="theme-button" id="themeButton">☾</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">✦ ТВОЯ МИНУТА ПЕРЕЗАГРУЗКИ</p>
+
+                <h1>
+                    Немного игры.<br>
+                    <span>Много настроения.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Выбери мини-игру, проверь свою реакцию
+                    или просто отвлекись на пару минут.
+                    Здесь нет правильного способа отдыхать.
+                </p>
+
+                <a href="#games" class="primary-button">
+                    Выбрать игру ↗
+                </a>
+            </div>
+
+            <div class="hero-art">
+                <div class="orbit"></div>
+                <div class="art-card">
+                    <span class="card-small">TODAY'S MOOD</span>
+                    <span class="card-face">☺</span>
+                    <span>just have fun</span>
+                </div>
+                <span class="floating-ball ball-one">✳</span>
+                <span class="floating-ball ball-two">＋</span>
+                <span class="floating-ball ball-three">✦</span>
+            </div>
+        </section>
+
+        <section class="games-section" id="games">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">МАЛЕНЬКИЕ ПРИКЛЮЧЕНИЯ</p>
+                    <h2>Во что сыграем?</h2>
+                </div>
+                <span class="game-count">03 ИГРЫ</span>
+            </div>
+
+            <div class="game-grid">
+
+                <article class="game-card">
+                    <div class="game-visual visual-reaction">
+                        <span class="visual-symbol">⚡</span>
+                        <span class="visual-label">READY?</span>
+                    </div>
+
+                    <div class="game-info">
+                        <div class="card-meta">
+                            <span>01 / РЕАКЦИЯ</span>
+                            <span class="tag">БЫСТРО</span>
+                        </div>
+
+                        <h3>Проверь реакцию</h3>
+
+                        <p>
+                            Дождись зелёного сигнала
+                            и нажми как можно быстрее.
+                        </p>
+
+                        <button class="game-button" data-game="reaction">
+                            Играть →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="game-card">
+                    <div class="game-visual visual-guess">
+                        <span class="number-art">?</span>
+                        <span class="visual-label">1 — 100</span>
+                    </div>
+
+                    <div class="game-info">
+                        <div class="card-meta">
+                            <span>02 / ЛОГИКА</span>
+                            <span class="tag">УГАДАЙ</span>
+                        </div>
+
+                        <h3>Секретное число</h3>
+
+                        <p>
+                            Я загадал число от 1 до 100.
+                            Сможешь найти его?
+                        </p>
+
+                        <button class="game-button" data-game="guess">
+                            Играть →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="game-card">
+                    <div class="game-visual visual-target">
+                        <span class="target-art">◎</span>
+                        <span class="visual-label">10 SECONDS</span>
+                    </div>
+
+                    <div class="game-info">
+                        <div class="card-meta">
+                            <span>03 / ВНИМАНИЕ</span>
+                            <span class="tag">ФОКУС</span>
+                        </div>
+
+                        <h3>Поймай кружок</h3>
+
+                        <p>
+                            Лови появляющиеся кружки.
+                            Сколько очков наберёшь за 10 секунд?
+                        </p>
+
+                        <button class="game-button" data-game="target">
+                            Играть →
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="daily-section" id="daily">
+
+            <div class="daily-icon">✧</div>
+
+            <div>
+                <p class="eyebrow">НЕБОЛЬШОЙ ЧЕЛЛЕНДЖ</p>
+                <h2>Задание дня</h2>
+
+                <p id="dailyTask">
+                    Улыбнись себе в зеркале. Да, прямо сейчас.
+                </p>
+            </div>
+
+            <button class="outline-button" id="newTaskButton">
+                Другое задание ↻
+            </button>
+
+        </section>
+
+        <footer>
+            <span>playroom © 2026</span>
+            <span>Сделано для хорошего настроения ♥</span>
+        </footer>
+
+    </main>
+
+    <!-- Игровое окно -->
+
+    <div class="modal-backdrop" id="modal">
+
+        <section class="modal">
+
+            <button class="close-button" id="closeModal">×</button>
+
+            <p class="eyebrow" id="modalEyebrow">МИНИ-ИГРА</p>
+
+            <h2 id="modalTitle">Игра</h2>
+
+            <div id="gameContent"></div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
