@@ -3,13 +3,13 @@
 :root {
     --bg: #f5f6fa;
     --surface: #ffffff;
-    --text: #202638;
-    --muted: #7c8497;
+    --text: #11151e;
+    --muted: #434752;
     --line: #e8eaf1;
-    --blue: #a8c5f5;
-    --blue-dark: #547fca;
-    --lavender: #d7cafa;
-    --shadow: 0 18px 55px rgba(40, 53, 83, .08);
+    --blue: #7286a7;
+    --blue-dark: #3c6dc1;
+    --lavender: #6e5e9a;
+    --shadow: 0 18px 55px rgba(56, 63, 80, 0.08);
 }
 
 * {
